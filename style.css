@@ -16,7 +16,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
-
 }
 
 .container {
@@ -61,4 +60,12 @@ form button {
 
 form button:hover{
     background: var(--primary-color-dark);
+}
+
+.pausado {
+    color: red;
+}
+
+.caixa {
+    padding-left: 10em;
 }

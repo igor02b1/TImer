@@ -14,6 +14,7 @@ let segundos = 0;
 let timer;
 
 function  iniciarRelogio(){
+    relogio.classList.remove('pausado');
     clearInterval(timer);
     timer = setInterval(function() {
         segundos++;
@@ -27,10 +28,12 @@ iniciar.addEventListener("click", function(event) {
 
 pausar.addEventListener("click", function(event) {
     clearInterval(timer);
+    relogio.classList.add('pausado')
 });
 
 zerar.addEventListener("click", function(event){
     clearInterval(timer);
     relogio.innerHTML = '00:00:00';
     segundos = 0;
+    relogio.classList.remove('pausado')
 })
